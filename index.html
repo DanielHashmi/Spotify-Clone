@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="leftHead">
+                <img src="images/spotifyLogo.png" alt="">
+                <img class="cross" src="images/close.svg" alt="cross icon">
+            </div>
+            <div class="leftBtns">
+                <div><img src="images/home.png" alt="">Home</div>
+                <div><img src="images/search.png" alt=""><input type="text" placeholder="Search"></div>
+            </div>
+            <div class="library">
+                <div>
+                    <img src="images/library.png" alt="">
+                    <h3>Your Library</h3>
+                </div>
+                <h1>+</h1>
+            </div>
+            <div class="musics">
+                <ul class="uL">
+
+                </ul>
+            </div>
+            <footer class="libraryFoot">
+                <div>
+                    <a href="#">Legal</a>
+                    <a href="#">Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Cookies</a>
+                </div>
+                <div class="language">
+                    <button>
+                        <img src="images/globe.png" alt="">
+                        English
+                    </button>
+                </div>
+            </footer>
+        </div>
+        <div class="right">
+            <header>
+                <div class="menuCont">
+                    <img class="menu" src="images/menu.svg" alt="menu Icon">
+                    <div>
+                        <h1><img src="images/arrow left.png" alt="arrow left"></h1>
+                        <h1><img src="images/arrow right.png" alt="arrow right"></h1>
+                    </div>
+                </div>
+                <div>
+                    <button class="sign">Sign up</button>
+                    <button class="log">Log in</button>
+                </div>
+            </header>
+            <div class="line">
+                <h1>Spotify Playlist</h1>
+                <h5>Show All</h5>
+            </div>
+            <div class="hero">
+                <div class="playBar">
+                    <div class="Items">
+                        <div class="song-name"></div>
+                        <div class="barBtns">
+                            <i class="backword fa-solid fa-backward"></i>
+                            <i id="big-play" class="fa-solid fa-play"></i>
+                            <i class="forword fa-solid fa-forward"></i>
+                        </div>
+                        <div class="dur-vol">
+                            <div class="duration">00:00</div>
+                            <div class="VolumeSec">
+                                <img class="volImg" src="images/volume-2.svg" alt="volume icon">
+                                <input class="volRan" type="range">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekBar">
+                        <div class="ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
