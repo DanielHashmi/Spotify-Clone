@@ -54,7 +54,7 @@ function playMusics() {
 
 async function displayAlbums() {
     try {
-        let fetchingSongs = await fetch(`/Musics/`)
+        let fetchingSongs = await fetch(`http://127.0.0.1:3000/Musics/`)
         let response = await fetchingSongs.text();
         let div = document.createElement('div');
         div.innerHTML = response;
@@ -63,7 +63,7 @@ async function displayAlbums() {
         for (let i = 0; i < allAnch.length; i++) {
             if (allAnch[i].href.includes('/Musics') && !allAnch[i].href.includes('.htaccess')) {
                 let folders = allAnch[i].href.split('/')[4];
-                let fetchingSongs = await fetch(`/Musics/${folders}/info.json`)
+                let fetchingSongs = await fetch(`http://127.0.0.1:3000/Musics/${folders}/info.json`)
                 let response = await fetchingSongs.json();
                 document.querySelector('.hero').innerHTML += `<div data-folder="${folders}" class="card">
 <img class="play" src="images/play.png" alt="">
